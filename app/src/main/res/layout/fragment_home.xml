@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="236dp"
+        android:background="@drawable/profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="30dp"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="79dp"
+            android:layout_height="91dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/img12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="90dp"
+            android:text="Luvy Muhammad Riski"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="120dp"
+            android:text="Alamat:"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="120dp"
+            android:text="Jl.Sermaniran "
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/pengaturan"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/baseline_settings_24" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout23"
+        android:layout_width="0dp"
+        android:layout_height="539dp"
+        android:background="@drawable/bg_frame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listMakanan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            tools:listitem="@layout/activity_list_menu"/>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
